@@ -8,10 +8,11 @@
 <body>
   {% crsf_token %}
   <h1>現在のルートをあきらめて、スタートからやり直しますか？</h1>
+  <h3><div class="warning">警告</div>やり直しはもとに戻すことはできません。それを承知したうえで実行してください。<div class="warning">警告</div></h3>
   <form action="" method="post">
     <p>
-    <input type="radio" name="answer" value="y" checked="checked">はい
-    <input type="radio" name="answer" value="n">いいえ
+    <input type="radio" name="answer" value="y">はい
+    <input type="radio" name="answer" value="n" checked="checked">いいえ
     </p>
     <input type="submit" name="送信">
   </form>

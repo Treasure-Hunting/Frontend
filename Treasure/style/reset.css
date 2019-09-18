@@ -9,3 +9,11 @@ form {
 h1 {
     font-size: 20px;
 }
+h3 {
+    border: solid #000000;
+}
+.warning {
+    font-size: 30px;
+    color: yellow;
+    -webkit-text-stroke: 1px #000000;
+}
