@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <title>Reset Difficulty</title>
     <link rel="stylesheet" href="style/reset.css">
-  {% static %}
+  {% load static %}
+  <script src="{% static "back-prevent.js" %}"></script>
 </head>
 <body>
   {% crsf_token %}
