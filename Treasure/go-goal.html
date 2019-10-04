@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 
 <head>
   <meta charset="utf-8">
@@ -11,9 +11,9 @@
 
   <body>
     
-    <h1>暗号</h1>
-    <div>{{ code }}</div>
-    <div id="pass">{{ password }}</div>
+    {% ifequal difficulty_pk 1 %}
+    <h1>あなたが目指す場所は、{{ goal }}です。</h1>
+    
     
   </body>
 </html>
