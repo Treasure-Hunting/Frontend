@@ -18,7 +18,7 @@
         {% for difficulty in difficulties %}
           <div class="select">
             <input type="radio" name="difficulty" id="{{ difficulty.id }}" value="{{ difficulty.id }}">
-            <label for="{{difficulty.id}}">
+            <label for="{{ difficulty.id }}">
               {{ difficulty.name }}
             </label>
           </div>
