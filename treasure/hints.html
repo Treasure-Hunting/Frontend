@@ -10,9 +10,13 @@
   </head>
 
   <body>
-    <h1>ヒント</h1>
+    {% crsf_token %}
+    <h1>ヒント {{ hint_index }} / 4</h1>
     <div id="hint">{{ hint }}</div>
-    <button href = "https://treasure-hunting.tk/treasure/answer" name = "答えを入力する">
+    <form action="" method="post">
+      <input type="submit" value="回答ページへ">
+    </form>
+    
   </body>
   
 </html>
