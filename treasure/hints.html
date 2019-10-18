@@ -10,12 +10,16 @@
   </head>
 
   <body>
+    {% crsf_token %}
     <h1>ヒント</h1>
     <div id="hint">{{ hint }}</div>
     <form action="" method="post">
       <input type="number" id="number">
       <button id="confirm" type="submit">確認</button>
     </form>
+    {% if result %}
+      <h2>{{ result }}</h2>
+    {% endif %}
   </body>
   
 </html>
