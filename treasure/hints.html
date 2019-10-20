@@ -16,7 +16,9 @@
     <form action="" method="post">
       <input type="submit" value="回答ページへ">
     </form>
-    
+    {% if result %}
+      <h2>{{ result }}</h2>
+    {% endif %}
   </body>
   
 </html>
