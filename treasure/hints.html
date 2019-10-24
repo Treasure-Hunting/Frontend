@@ -10,6 +10,7 @@
   </head>
 
   <body>
+    {% csrf_token %}
     <h1>ヒント</h1>
     <div id="hint">{{ hint }}</div>
     <form action="" method="post">

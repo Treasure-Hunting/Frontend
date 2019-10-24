@@ -8,7 +8,7 @@
     <script src="{% static "back-prevent.js" %}"></script>
   </head>
   <body>
-    {% crsf_token %}
+    {% csrf_token %}
     <h1>現在のルートをあきらめて、スタートからやり直しますか？</h1>
     <h3><span class="warning">警告</span>やり直しはもとに戻すことはできません。それを承知したうえで実行してください。<span class="warning">警告</span></h3>
     <form action="" method="POST">
