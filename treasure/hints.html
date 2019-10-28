@@ -17,6 +17,9 @@
       <input type="number" id="number">
       <button id="confirm" type="submit">確認</button>
     </form>
+    {% if result %}
+      <h2>{{ result }}</h2>
+    {% endif %}
   </body>
   
 </html>
