@@ -11,7 +11,8 @@
 
   <body>
     <h2>答えを入力してください</h2>
-    <form method="post" action="">
+    <form method="POST" action="">
+      {% csrf_token %}
       <input type="number">
       <input type="submit" value="確認">
     </form>

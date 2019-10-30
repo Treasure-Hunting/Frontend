@@ -10,10 +10,10 @@
   </head>
 
   <body>
-    {% crsf_token %}
     <h1>ヒント {{ hint_index }} / 4</h1>
     <div id="hint">{{ hint }}</div>
     <form action="" method="post">
+      {% crsf_token %}
       <input type="submit" value="回答ページへ">
     </form>
     {% if result %}
