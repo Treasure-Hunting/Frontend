@@ -11,10 +11,10 @@
 
   <body>
     
-  {% ifequal diffculty_pk %}
+  {% ifequal diffculty_pk 1%}
     <h1>あなたが目指す場所は、{{ goal }}です。</h1>
   {% else %}
-    <h1>キーワードを並び替えて2進数から{{ change }}に変換し、その場所を目指せ！<!--changeは変換先のn進数--></h1>
+    <h1>キーワードを並び替えて2進数から{{change}}に変換し、その場所を目指せ！<!--changeは変換先のn進数--></h1>
     <ol>
       {% for quiz_data in quizzes %}
       <li>
@@ -28,7 +28,7 @@
       </thred>
       <tbody>
         {% for correspond in corresponds %}<!--correspondはbinaryが二進数でtoBaseが変換先-->
-        <tr><td>{{ correspond.binary }}</td><td>{{ correspond.to_base }}</td></tr>
+        <tr><td>{{correspond.binary}}</td><td>{{correspond.to_base}}</td></tr>
         {% endfor %}
       </tbody>
     </table>
