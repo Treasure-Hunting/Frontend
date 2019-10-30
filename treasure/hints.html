@@ -12,7 +12,7 @@
   <body>
     <h1>ヒント {{ hint_index }} / 4</h1>
     <div id="hint">{{ hint }}</div>
-    <form action="" method="POST">
+    <form action="" method="post">
       {% csrf_token %}
       <input type="submit" value="回答ページへ">
     </form>
